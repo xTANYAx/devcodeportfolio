@@ -505,6 +505,81 @@ ul.foo-nav li {
 }
 /* Animation End */
 
+/* Slideshow Start */
+
+a.demo-cta {
+    padding-top: 20px;
+    display: inline-block;
+}
+.slidesection {
+	position: relative;
+}
+.slidesection .slide-container .slide {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 15px;
+	color: white;
+}
+.slidesection .slide-container .slide .content {
+    flex: 1 1 280px;
+	animation:slideContent .4s linear .2s backwards;
+}
+
+@keyframes slideContent {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+}
+
+.slidesection .slide-container .slide .slide-img {
+	flex: 1 1 700px;
+}
+.slidesection .slide-container .slide .slide-img img {
+	width: 100%;
+	animation:slideImage .4s linear;
+}
+
+@keyframes slideImage {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+}
+
+.slidesection .slide-container {
+	display: none;
+}
+.slidesection .slide-container.active {
+	display: block;
+}
+.slidesection #s-prev, .slidesection #s-next {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-50%);
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--red);
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.slidesection #s-prev:hover, .slidesection #s-next:hover {
+	background-color: var(--red);
+}
+.slidesection #s-prev {
+	left: 0;
+}
+.slidesection #s-next {
+	left: 60px;
+}
+
+/* Slideshow End */
 
 /* Media Queries */
 
@@ -734,6 +809,15 @@ ul.foo-nav li {
 	.coltxt p {
 		padding-top: 20px;
 	}
+	.prodsection {
+		padding: 40px 20px;
+	}
+	.slidesection #s-prev, .slidesection #s-next {
+		top: 25px;
+	}
+	.slidesection .slide-container .slide .content {
+		padding-top: 70px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.blank {
@@ -878,6 +962,9 @@ ul.foo-nav li {
 		top: 75px;
 		text-align: center;
 		z-index: 10;
+	}
+	.slidesection #s-prev, .slidesection #s-next {
+		top: 25px;
 	}
 }
 @media screen and (max-width: 375px) { 
