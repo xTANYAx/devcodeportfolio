@@ -506,7 +506,9 @@ ul.foo-nav li {
 /* Animation End */
 
 /* Slideshow Start */
-
+.prodsection {
+	background-color: var(--dark);
+}
 a.demo-cta {
     padding-top: 20px;
     display: inline-block;
