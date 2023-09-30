@@ -968,6 +968,9 @@ a.demo-cta {
 	.slidesection #s-prev, .slidesection #s-next {
 		top: 25px;
 	}
+	.prodsection {
+		padding: 40px 20px;
+	}
 }
 @media screen and (max-width: 375px) { 
 	nav ul, nav ul:active ul {
