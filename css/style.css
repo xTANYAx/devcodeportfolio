@@ -355,7 +355,7 @@ h3.expyear {
 	color: white;
 	background-image: url('https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 	background-size: cover;
-	box-shadow: inset 0 0 0 2000px rgba(14, 14, 14, 0.9);
+	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
 }
 .projectgrid {
     display: flex;
@@ -366,13 +366,14 @@ h3.expyear {
     margin-bottom: 20px;
 }
 .projecttxt {
-    width: 55%;
+    width: 35%;
 }
 .projectimg {
-    width: 45%;
+    width: 65%;
 }
 .projectimg img {
     width: 100%;
+	margin-left: -100px;
 }
 
 /* Have Project Section End */
@@ -820,6 +821,9 @@ a.demo-cta {
 	.slidesection .slide-container .slide .content {
 		padding-top: 70px;
 	}
+	.projectimg img {
+		margin-left: -40px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.blank {
@@ -970,6 +974,9 @@ a.demo-cta {
 	}
 	.prodsection {
 		padding: 40px 20px;
+	}
+	.projectimg img {
+		margin-left: -20px;
 	}
 }
 @media screen and (max-width: 375px) { 
