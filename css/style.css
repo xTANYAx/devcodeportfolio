@@ -139,6 +139,7 @@ header .finalmenu li {
 	text-align: center;
 	padding: 7px;
 	line-height: 0;
+	border-radius: 5px;
 }
 .col-socmed a:hover {
 	color: var(--red);
@@ -268,6 +269,7 @@ div.col-intro {
 	justify-content: center;
 	flex-direction: column;
     width: 50%;
+	border-radius: 20px;
 	background-color: var(--darkgray);
 	margin: 10px 20px;
 	padding: 40px;
@@ -279,7 +281,7 @@ div.col-intro {
     flex-direction: row;
     align-items: center;
     height: 130px;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 h3.noyears {
     font-size: 150px;
@@ -331,6 +333,7 @@ h3.expyear {
 	padding: 40px;
 	text-align: center;
 	box-shadow: 5px 5px 10px #0000002c;
+	border-radius: 20px;
 }
 .service-box1 {
 	background-color: var(--red);
@@ -571,6 +574,7 @@ a.demo-cta {
     text-align: center;
     cursor: pointer;
     font-weight: bolder;
+	border-radius: 10px;
 }
 .slidesection #s-prev:hover, .slidesection #s-next:hover {
 	background-color: var(--red);
@@ -580,6 +584,10 @@ a.demo-cta {
 }
 .slidesection #s-next {
 	left: 60px;
+}
+
+.slide-img img {
+    border-radius: 20px;
 }
 
 /* Slideshow End */
