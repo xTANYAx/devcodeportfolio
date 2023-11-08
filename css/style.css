@@ -24,7 +24,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-	font-size: 18px;
+	font-size: 1.30rem;
 	line-height: 1.6;
 	padding: 0;
 	margin: 0;
@@ -176,6 +176,11 @@ header .finalmenu li {
     font-size: 25px !important;
 	padding-bottom: 0px;
     margin-bottom: -10px;
+	color: white;
+}
+h2.sub-heading {
+    color: #f26c4f;
+    font-weight: 400;
 }
 h2.parenthead {
     font-size: 50px;
