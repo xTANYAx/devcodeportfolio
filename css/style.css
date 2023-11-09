@@ -181,10 +181,12 @@ header .finalmenu li {
 h2.sub-heading {
     color: #f26c4f;
     font-weight: 400;
+	line-height: 1;
 }
 h2.parenthead {
     font-size: 50px;
 	line-height: 1.2;
+	letter-spacing: 3px;
 }
 .herotxt p { margin-bottom: 20px; }
 .herotxt a {
@@ -426,20 +428,52 @@ h3.expyear {
 }
 .logogrid {
     width: 60%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
-    gap: 20px;
 }
 .logogrid img {
-    width: 207px;
+    width: 80px;
 }
 .vectorimg {
     width: 40%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+	padding-right: 150px;
 }
 .vectorimg img {
-    width: 500px;
+    width: 550px;
+    margin: -60px 0px;
+}
+.ui-grid figcaption, .web-grid figcaption, .vec-grid figcaption {
+    text-align: center;
+    color: white;
+	font-size: 0.8rem;
+}
+.ui-grid, .web-grid, .vec-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+}
+.logogrid h2 {
+	font-size: 1.1rem;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+#title-red {
+	color: var(--red);
+}
+.logogrid figure {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 10px;
+	box-shadow: 5px 5px 10px #0000001c;
+	text-align: center;
+}
+.web-section {
+	margin: 40px 0px;
 }
 /* Skill End */
 
@@ -794,19 +828,22 @@ a.demo-cta {
 	}
 	.logogrid {
 		width: 100%;
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(18%, 1fr));
-		gap: 20px;
-		padding: 20px;
+		padding:0px 20px;
 	}
 	.logogrid img {
-		width: 169px;
+		width: 80px;
+		margin: 0px;
 	}
 	.vectorimg {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
+		padding-right: 0px;
+	}
+	.vectorimg img {
+		margin: 0px;
+		width: 400px;
 	}
 	.footergrid {
 		display: flex;
@@ -948,16 +985,9 @@ a.demo-cta {
 	}
 	.logogrid {
 		width: 100%;
-		display: flex;
-		gap: 20px;
-		padding: 20px;
-		flex-direction: row;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: center;
 	}
 	.logogrid img {
-		width: 160px;
+		width: 80px;
 	}
 	.vectorimg img {
 		width: 300px;
@@ -1005,6 +1035,6 @@ a.demo-cta {
 		z-index: 10;
 	}
 	.logogrid img {
-		width: 140px;
+		width: 100px;
 	}
 }
