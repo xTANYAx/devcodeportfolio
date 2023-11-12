@@ -548,84 +548,148 @@ ul.foo-nav li {
 }
 /* Animation End */
 
-/* Slideshow Start */
-.prodsection {
-	background-color: var(--dark);
+/* Tab CSS */
+.webprojflex {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
 }
-a.demo-cta {
-    padding-top: 20px;
-    display: inline-block;
-}
-.slidesection {
-	position: relative;
-}
-.slidesection .slide-container .slide {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 15px;
+.webprojflex div {
 	color: white;
+	background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 40px;
+	box-shadow: 5px 5px 10px #0000001c;
 }
-.slidesection .slide-container .slide .content {
-    flex: 1 1 280px;
-	animation:slideContent .4s linear .2s backwards;
+.webprojflex div img {
+	padding-top: 20px;
+	box-shadow: 5px 5px 10px #0000001c;
 }
-
-@keyframes slideContent {
-	0% {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
+.webprojflex div h3 {
+	color: var(--red);
+	font-weight: 400;
+	letter-spacing: 1;
 }
-
-.slidesection .slide-container .slide .slide-img {
-	flex: 1 1 700px;
+a#cta-tab {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;
 }
-.slidesection .slide-container .slide .slide-img img {
-	width: 100%;
-	animation:slideImage .4s linear;
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+	gap: 5px;
+	margin-top: 40px;
 }
-
-@keyframes slideImage {
-	0% {
-		opacity: 0;
-		transform: translateY(-50px);
-	}
-}
-
-.slidesection .slide-container {
-	display: none;
-}
-.slidesection .slide-container.active {
-	display: block;
-}
-.slidesection #s-prev, .slidesection #s-next {
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-50%);
-    color: white;
-    background-color: transparent;
-    border: 1px solid var(--red);
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    text-align: center;
-    cursor: pointer;
-    font-weight: bolder;
-}
-.slidesection #s-prev:hover, .slidesection #s-next:hover {
+  
+  /* Style the buttons inside the tab */
+  .tab button {
+	background-color: var(--dark);
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 17px;
+	margin: 0px 10px;
+	padding: 15px 45px;
+	transition: 0.324s ease;
+	color: white;
+	box-shadow: 5px 5px 10px #0000001c;
+	border-bottom: 1px solid var(--red);
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+	transition: 0.324s ease;
 	background-color: var(--red);
-}
-.slidesection #s-prev {
-	left: 0;
-}
-.slidesection #s-next {
-	left: 60px;
+	color: white;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+	transition: 0.324s ease;
+	background-color: var(--red);
+	color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+	display: none;
+	padding: 10px 0px 40px 0px;
+	border-top: none;
+  }
+  .tabcontent h3 {
+	padding: 0px;
+	margin: 10px 0px 0px 0px;
+  }
+  .demo-cta {
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: var(--red);
+	font-weight: bold;
+	letter-spacing: 1px;
+	float: left;
+	padding: 10px 0px;
 }
 
-/* Slideshow End */
+.vectorflex img {
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    height: 450px;
+    object-fit: cover;
+    width: 100%;
+}
+  
+  .vectorflex figure {
+	margin: 0;
+	break-inside: avoid;
+  }
+  
+  .vectorflex figure a {
+	color: black;
+	text-decoration: none;
+  }
+  
+  .vectorflex figcaption {
+	grid-row: 2;
+	grid-column: 1;
+	background-color: rgba(255,255,255,.5);
+	padding: .2em .5em;
+	justify-self: start;
+  }
+  
+  .vectorflex {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 20px;
+}
 
+.logoflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+.logoflex img{
+	width: 284px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px #0000001c;
+}
+/*==============================================================================================*/
 /* Media Queries */
 
 @media screen and (max-width: 1366px) {
