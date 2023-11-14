@@ -567,7 +567,7 @@ ul.foo-nav li {
 	box-shadow: 5px 5px 10px #0000001c;
 }
 .webprojflex div h3 {
-	color: var(--red);
+	color: white;
 	font-weight: 400;
 	letter-spacing: 1;
 }
