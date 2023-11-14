@@ -524,7 +524,7 @@ ul.foo-nav li {
 .fadein {
 	opacity: 0;
 	filter: blur(5px);
-	transition: all 1s ease;
+	transition: all 0.5s ease;
 }
 .hidden {
 	opacity: 0;
@@ -933,6 +933,25 @@ a#cta-tab {
 	.projectimg img {
 		margin-left: -40px;
 	}
+	.webprojflex {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: 0px;
+		padding: 0px 20px;
+	}
+	.webprojflex div {
+		padding: 20px;
+		margin: 10px;
+	}
+	.vectorflex {
+		padding: 20px 40px;
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	}
+	.vectorflex img {
+		height: 290px;
+	}
+	.logoflex img {
+		width: 220px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.blank {
@@ -1079,6 +1098,31 @@ a#cta-tab {
 	}
 	.projectimg img {
 		margin-left: -20px;
+	}
+	.logoflex img {
+		width: 150px;
+	}
+	.vectorflex img {
+		height: 350px;
+	}
+	button.tablinks {
+		width: 100%;
+		margin: 5px 20px;
+	}
+	.webprojflex {
+		margin-top: 20px;
+	}
+	.webprojflex div {
+		margin: 0px;
+	}
+	.vectorflex {
+		padding: 20px 20px;
+	}
+	.logoflex {
+		margin-top: 20px;
+	}
+	.logoflex img {
+		width: 158px;
 	}
 }
 @media screen and (max-width: 375px) { 
