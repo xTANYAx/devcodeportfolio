@@ -267,22 +267,35 @@ h2.parenthead {
 .aboutgrid {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
+	justify-content: space-between;
+}
+.behance-img img {
+	width: 900px;
+	margin: 50px 0px;
+}
+.behance-img {
+    background-color: var(--red);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-right: 270px;
 }
 div.col-intro {
-    width: 50%;
+    width: 35%;
 	padding-right: 50px;
 }
 .discussion {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-    width: 50%;
-	background-color: var(--darkgray);
-	margin: 10px 20px;
+    width: 40%;
+	background-color: var(--red);
+	margin: 20px;
 	padding: 40px;
 	text-align: center;
 	box-shadow: 5px 5px 10px #0000001c;
+	border-radius: 5px;
 }
 .years {
     display: flex;
@@ -302,16 +315,16 @@ h3.expyear {
 }
 .letstxt {
 	font-size: 22px;
-	color: #8b8b8b;
+	color: white;
 	margin-bottom: 20px;
 }
 .discussion a {
-	color: var(--red);
+	color: white;
 	text-decoration: none;
 	padding-bottom: 10px;
 }
 .discussion a:hover {
-	color: white;
+	color: #d6d6d6;
 	text-decoration: none;
 }
 .discussion a {
@@ -341,6 +354,7 @@ h3.expyear {
 	padding: 40px;
 	text-align: center;
 	box-shadow: 5px 5px 10px #0000002c;
+	border-radius: 5px;
 }
 .service-box1 {
 	background-color: var(--red);
@@ -377,6 +391,7 @@ h3.expyear {
 }
 .projecttxt {
     width: 35%;
+	padding-left: 100px;
 }
 .projectimg {
     width: 65%;
@@ -818,7 +833,7 @@ a#cta-tab {
 	}
 	.aboutgrid {
 		display: flex;
-		align-items: stretch;
+		align-items: center;
 		flex-wrap: wrap;
 	}
 	h3.noyears {
@@ -952,6 +967,16 @@ a#cta-tab {
 	.logoflex img {
 		width: 220px;
 	}
+	.behance-img img {
+		width: 500px;
+		margin: 20px 0px;
+	}
+	.behance-img {
+		margin-right: 0px;
+	}
+	.aboutgrid {
+		justify-content: center;
+	}
 }
 @media screen and (max-width: 480px) {
 	.blank {
@@ -1056,7 +1081,7 @@ a#cta-tab {
 	}
 	h2.parenthead {
 		font-size: 30px;
-		line-height: 1.6;
+		line-height: 1;
 	}
 	.spacer { 
 		padding: 20px 0px;
@@ -1113,7 +1138,7 @@ a#cta-tab {
 		margin-top: 20px;
 	}
 	.webprojflex div {
-		margin: 0px;
+		margin: 10px 0px 10px 0px;
 	}
 	.vectorflex {
 		padding: 20px 20px;
@@ -1123,6 +1148,9 @@ a#cta-tab {
 	}
 	.logoflex img {
 		width: 158px;
+	}
+	.behance-img img {
+		width: 360px;
 	}
 }
 @media screen and (max-width: 375px) { 
