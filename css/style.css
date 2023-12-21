@@ -150,13 +150,13 @@ header .finalmenu li {
 /* Header End */
 
 /* Hero Section End */
+.herosection { color: white; }
 .herogrid {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    color: white;
 }
 .col-hero img {
     width: 563px;
@@ -178,12 +178,11 @@ header .finalmenu li {
     font-size: 25px !important;
 	padding-bottom: 0px;
     margin-bottom: -10px;
-	color: white;
 }
 h2.sub-heading {
-    color: #f26c4f;
     font-weight: 400;
 	line-height: 1;
+	color: var(--red);
 }
 h2.parenthead {
     font-size: 50px;
@@ -219,7 +218,6 @@ h2.parenthead {
   }
   .dynamic-txts li{
 	list-style: none;
-	color: var(--red);
 	font-size: 50px;
 	font-weight: bold;
 	position: relative;
@@ -432,10 +430,6 @@ h3.expyear {
 /* Work End */
 
 /* Skill Section */
-
-.skillsection {
-	background-color: var(--darkgray);
-}
 .skillgrid {
     display: flex;
     flex-direction: row;
@@ -705,6 +699,28 @@ a#cta-tab {
 	box-shadow: 5px 5px 10px #0000001c;
 }
 /*==============================================================================================*/
+
+/* Toggle Theme */
+
+.footersection i {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    background-color: dimgray;
+    padding: 6px 10px;
+    border-radius: 200px;
+    width: 40px;
+    height: auto;
+    text-align: center;
+}
+
+/* Toggle Theme End*/
+
+
+
 /* Media Queries */
 
 @media screen and (max-width: 1366px) {
