@@ -29,30 +29,34 @@ fadeinElements.forEach((el) => observer.observe(el));
 // Toggle Theme
 const toggle = document.getElementById('toggleDark');
 const body = document.querySelector('body');
-const about = document.getElementById('aboutme');
-const hero = document.getElementById('theme-hero');
 
-const after = document.querySelector(":root");
+const root = document.querySelector(":root");
 
 toggle.addEventListener('click', function(){
     this.classList.toggle('bi-brightness-high-fill');
     if(this.classList.toggle('bi-moon')){
         body.style.background = '#222222';
-        body.style.transition = '1s';
+        body.style.transition = '0.32s';
+        root.style.setProperty("--txtanimation", '#222222');
 
-        about.style.background = '#1f1f1f';
-        about.style.color = 'white';
+        root.style.setProperty("--darkgray", '#222222');
+        root.style.setProperty("--dark", '#1F1F1F');
+        root.style.setProperty("--red", '#F26C4F');
+        root.style.setProperty("--white", '#ffffff');
+        root.style.setProperty("--offwhite", '#f7f7f7');
+        root.style.setProperty("--name", '#f7f7f7');
+        root.style.setProperty("--red-box", '#f7f7f7');
 
-        hero.style.color = 'white';
-        after.style.setProperty("--darkgray", '#222222');
     }else{
         body.style.background = 'white';
-        body.style.transition = '1s';
+        body.style.transition = '0.32s';
+        root.style.setProperty("--txtanimation", 'white');
+        root.style.setProperty("--red", '#F26C4F');
 
-        about.style.background = '#f1f1f1';
-        about.style.color = '#222222';
-
-        hero.style.color = '#222222';
-        after.style.setProperty("--darkgray", 'white');
+        root.style.setProperty("--darkgray", '#f7f7f7');
+        root.style.setProperty("--dark", '#f7f7f7');
+        root.style.setProperty("--white", '#222222');
+        root.style.setProperty("--name", '#222222');
+        root.style.setProperty("--red-box", 'white');
     }
 });

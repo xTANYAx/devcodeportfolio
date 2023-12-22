@@ -13,12 +13,18 @@ a {
 	color: var(--red);
 }
 a:hover {
-	color: white;
+	color: var(--white);
 }
 :root {
   --dark: #1F1F1F;
   --darkgray: #222222;
-  --red: #F26C4F; 
+  --red: #F26C4F;
+  --white: #ffffff;
+  --offwhite: #f7f7f7;
+  --txtanimation: #222222;
+
+  --name: #ffffff;
+  --red-box: #ffffff;
 }
 html {
     scroll-behavior: smooth;
@@ -64,7 +70,7 @@ header .menu-hide {
 header .menu-hide .menu {
 	font-size: 30px;
 	text-align: center;
-	color: white;
+	color: var(--white);
 	text-decoration: none;
 	text-transform: uppercase;
 }
@@ -84,7 +90,7 @@ header nav li {
 nav li a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color: var(--white);
 	padding: 0px 20px;
 	transition: .5s ease;
 }
@@ -102,14 +108,14 @@ header .finalmenu li {
 .finalmenu li a {
 	text-transform: uppercase;
 	text-decoration: none;
-	color: white;
+	color: var(--white);
 	padding: 50px 20px;
 	transition: .5s ease;
 }
 
 #head-nav li a {
 	font-size: 15px;
-    color: white;
+    color: var(--white);
     font-weight: bold;
     letter-spacing: 1px;
 	transition: 0.326s ease;
@@ -123,34 +129,41 @@ header .finalmenu li {
 	align-items: center;
 }
 
-.col-logo { width: 37%; }
+.col-logo { width: 50%; }
 .col-nav { width: 50%; }
+
 .col-socmed { 
 	display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 15px;
-    width: 13%;
-    justify-content: flex-end;
+    justify-content: start;
+	margin-top: 20px;
 }
 
 .col-socmed a {
-	font-size: 16px;
-	color: white;
+	font-size: 20px;
+	color: var(--red-box);
 	background-color: var(--red);
-	width: 20px;
+	width: 30px;
+	height: 30px;
 	text-align: center;
 	padding: 7px;
 	line-height: 0;
+	border-radius: 100px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .col-socmed a:hover {
-	color: var(--red);
-	background-color: white;
+	color: var(--red-box);
+	background-color: #000;
 }
 /* Header End */
 
 /* Hero Section End */
-.herosection { color: white; }
+.herosection { color: var(--white); }
 .herogrid {
     display: flex;
     flex-wrap: nowrap;
@@ -166,6 +179,7 @@ header .finalmenu li {
     font-size: 110px;
     line-height: 110px;
     font-weight: 600;
+	color: var(--name);
 }
 .herotxt {
     padding: 0px 45px;
@@ -195,7 +209,7 @@ h2.parenthead {
 	text-decoration: none;
 }
 .herotxt a:hover {
-	color: white;
+	color: var(--white);
 	text-decoration: none;
 }
 .heroname img {
@@ -241,7 +255,7 @@ h2.parenthead {
 	top:0;
 	height: 100%;
 	width: 100%;
-	background: var(--darkgray);
+	background: var(--txtanimation);
 	border-left: 2px solid var(--red);
 	animation: typing 3s steps(10) infinite;
   }
@@ -259,8 +273,8 @@ h2.parenthead {
 /* About Me Section */
 
 .aboutsection {
-    background-color: #1f1f1f;
-	color: white;
+    background-color: var(--dark);
+	color: var(--white);
 }
 .aboutgrid {
     display: flex;
@@ -294,6 +308,7 @@ div.col-intro {
 	text-align: center;
 	box-shadow: 5px 5px 10px #0000001c;
 	border-radius: 5px;
+	color: var(--red-box);
 }
 .years {
     display: flex;
@@ -313,16 +328,15 @@ h3.expyear {
 }
 .letstxt {
 	font-size: 22px;
-	color: white;
 	margin-bottom: 20px;
 }
 .discussion a {
-	color: white;
+	color: var(--red-box);
 	text-decoration: none;
 	padding-bottom: 10px;
 }
 .discussion a:hover {
-	color: #d6d6d6;
+	color: #e7e7e7;
 	text-decoration: none;
 }
 .discussion a {
@@ -339,26 +353,26 @@ h3.expyear {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	gap: 40px;
 	padding: 20px 0px;
+	color: var(--red-box);
 }
 .offerheading {
 	text-align: center;
-	color: white;
+	color: var(--white);
 }
 .offersection {
-    background-color: var(--dark);
-    color: white;
+    color: var(--white);
 }
 .s-box {
 	padding: 40px;
 	text-align: center;
-	box-shadow: 5px 5px 10px #0000002c;
+	box-shadow: 5px 5px 10px #0000001c;
 	border-radius: 5px;
 }
 .service-box1 {
 	background-color: var(--red);
 }
 .service-box2, .service-box3 {
-	background-color: var(--darkgray);
+	background-color: #1f1f1f;
 }
 .offergrid h2 {
 	padding-bottom: 10px;
@@ -374,7 +388,7 @@ h3.expyear {
 
 .projectoffer {
 	background-color: var(--dark);
-	color: white;
+	color: var(--white);
 	background-image: url('https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
 	background-size: cover;
 	box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.9);
@@ -390,6 +404,10 @@ h3.expyear {
 .projecttxt {
     width: 35%;
 	padding-left: 100px;
+	color: var(--red-box);
+}
+.projecttxt a:hover {
+    color: #fff;
 }
 .projectimg {
     width: 65%;
@@ -417,7 +435,7 @@ h3.expyear {
 .worksection {
 	background-color: var(--darkgray);
 	padding: 200px 0px;
-	color: white;
+	color: var(--white);
 	background-image: url('https://xtanyax.github.io/devcodeportfolio/images/newwork.png');
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -455,18 +473,18 @@ h3.expyear {
 }
 .ui-grid figcaption, .web-grid figcaption, .vec-grid figcaption {
     text-align: center;
-    color: white;
+    color: var(--white);
 	font-size: 0.8rem;
 }
 .ui-grid, .web-grid, .vec-grid {
-    margin-top: 20px;
+    margin: 20px 0px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 30px;
 }
 .logogrid h2 {
 	font-size: 1.1rem;
-	color: white;
+	color: var(--white);
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -475,9 +493,9 @@ h3.expyear {
 	color: var(--red);
 }
 .logogrid figure {
-    background-color: #1f1f1f;
+    background-color: var(--dark);
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px 10px;
 	box-shadow: 5px 5px 10px #0000001c;
 	text-align: center;
 }
@@ -495,7 +513,7 @@ h3.expyear {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0px;
-	color: white;
+	color: var(--white);
 }
 ul.foo-nav {
     margin-right: -20px;
@@ -562,13 +580,13 @@ ul.foo-nav li {
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 40px;
 }
 .webprojflex div {
-	color: white;
-	background-color: #1f1f1f;
+	color: var(--white);
+	background-color: var(--dark);
     border-radius: 10px;
-    padding: 40px;
+    padding: 20px 40px;
 	box-shadow: 5px 5px 10px #0000001c;
 }
 .webprojflex div img {
@@ -576,7 +594,7 @@ ul.foo-nav li {
 	box-shadow: 5px 5px 10px #0000001c;
 }
 .webprojflex div h3 {
-	color: white;
+	color: var(--white);
 	font-weight: 400;
 	letter-spacing: 1;
 }
@@ -609,7 +627,7 @@ a#cta-tab {
 	margin: 0px 10px;
 	padding: 15px 45px;
 	transition: 0.324s ease;
-	color: white;
+	color: var(--white);
 	box-shadow: 5px 5px 10px #0000001c;
 	border-bottom: 1px solid var(--red);
   }
@@ -618,14 +636,14 @@ a#cta-tab {
   .tab button:hover {
 	transition: 0.324s ease;
 	background-color: var(--red);
-	color: white;
+	color: var(--red-box);
   }
   
   /* Create an active/current tablink class */
   .tab button.active {
 	transition: 0.324s ease;
 	background-color: var(--red);
-	color: white;
+	color: var(--red-box);
   }
   
   /* Style the tab content */
@@ -664,7 +682,7 @@ a#cta-tab {
   }
   
   .vectorflex figure a {
-	color: black;
+	color: var(--dark);
 	text-decoration: none;
   }
   
@@ -702,19 +720,14 @@ a#cta-tab {
 
 /* Toggle Theme */
 
-.footersection i {
+#toggleDark {
     font-size: 30px;
     cursor: pointer;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    transform: translate(-50%, -50%);
-    background-color: dimgray;
-    padding: 6px 10px;
     border-radius: 200px;
-    width: 40px;
-    height: auto;
     text-align: center;
+	margin: 20px;
+	padding: 0px 8px 10px 10px;
+	color: var(--red);
 }
 
 /* Toggle Theme End*/
@@ -748,20 +761,36 @@ a#cta-tab {
 		zoom: 100%;
 	}
 	.mainhead { padding: 0px 20px; }
-	.col-logo { order:1; width: 30%; }
-	.col-nav { order:3; width: 10%; }
-	.col-socmed { order:2; width: 60%; }
+	.col-logo { order:1; width: 70%; }
+	.col-nav { order:2; width: 20%; }
+	.col-theme { order: 3; width: 10%; }
+	.col-socmed { 
+		gap: 10px;
+		margin: 0px 20px 20px 50px;
+	}
+	.heroname img { display: none; }
 	.col-socmed a {
 		font-size: 16px;
-		color: white;
+		color: var(--red-box);
 		background-color: var(--red);
 		width: 20px;
+		height: 20px;
 		text-align: center;
-		padding: 10px;
-		line-height: 1.2;
+		padding: 7px;
+		line-height: 0;
+		border-radius: 100px;
+		display: flex;
+		align-content: center;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.herotxt h2.sub-heading {
+		font-size: 25px !important;
+		padding-bottom: 0px;
+		margin-bottom: 10px;
 	}
 	header .menu-hide .menu {
-		color: white;
+		color: var(--white);
 	}
 	nav ul, nav ul:active ul {
 		display: none;
@@ -795,7 +824,7 @@ a#cta-tab {
 	}
 	nav li a {
 		padding: 20px 8px;
-		color: white !important;
+		color: var(--red-box) !important;
 	}
 	nav ul, nav ul:active ul {
 		display: none;
@@ -995,6 +1024,11 @@ a#cta-tab {
 	}
 }
 @media screen and (max-width: 480px) {
+	.col-socmed { 
+		gap: 10px;
+		margin: 10px;
+		justify-content: center;
+	}
 	.blank {
 		height: 200px;
 	}
@@ -1016,22 +1050,15 @@ a#cta-tab {
 		top: 60px;
 		text-align: center;
 	}
-	.col-logo { order:1; width: 30%; }
-	.col-nav { order:3; width: 20%; }
-	.col-socmed { order:2; width: 50%; }
+	.col-logo { order:1; width: 70%; }
+	.col-nav { order:2; width: 15%; }
+	.col-theme { order: 3; width: 15%; }
+
 	.col-hero img {
 		width: 440px;
 		margin: 0px 0px -50px 0px;
 	}
-	.col-socmed a {
-		font-size: 14px;
-		color: white;
-		background-color: var(--red);
-		width: 20px;
-		text-align: center;
-		padding: 5px;
-		line-height: 1.2;
-	}
+
 	.heroname h2 {
 		font-size: 50px;
 		line-height: 50px;
@@ -1055,6 +1082,7 @@ a#cta-tab {
 		margin: 20px;
 		text-align: center;
 		background-color: var(--dark);
+		box-shadow: 5px 5px 10px #0000001c;
 	}
 	h2.sub-heading {
 		font-size: 25px !important;
