@@ -730,6 +730,11 @@ a#cta-tab {
 	color: var(--red);
 }
 
+.col-theme {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 /* Toggle Theme End*/
 
 
@@ -763,7 +768,11 @@ a#cta-tab {
 	.mainhead { padding: 0px 20px; }
 	.col-logo { order:1; width: 70%; }
 	.col-nav { order:2; width: 20%; }
-	.col-theme { order: 3; width: 10%; }
+	.col-theme { order: 3; width: 10%; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
 	.col-socmed { 
 		gap: 10px;
 		margin: 0px 20px 20px 50px;
